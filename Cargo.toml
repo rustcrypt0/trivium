@@ -1,0 +1,25 @@
+[package]
+name = "trivium"
+version = "0.2.1"
+authors = [
+    "RustCrypto <rust.crypt0proton.me>",
+    "RustCrypto Developers",
+]
+license = "MIT OR Apache-2.0"
+description = "Trivium Synchornous Stream Cipher"
+repository = "https://github.com/RustCrypto/stream-ciphers"
+keywords = ["crypto", "stream-cipher", "trait", "trivium"]
+categories = ["cryptography", "no-std"]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+block-cipher-trait = "0.6"
+stream-cipher = "0.3"
+
+[dev-dependencies]
+stream-cipher = { version = "0.3", features = ["dev"] }
+block-cipher-trait = { version = "0.6", features = ["dev"] }
+
+[badges]
+travis-ci = { repository = "RustCrypto/stream-ciphers" }
